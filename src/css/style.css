@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(182, 255, 87, 0.205);
+    font-size: 30px;
+    position: relative;
+}
+
+.root {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.test-form {
+    margin-bottom: 20px;
+}
+
+.tooltip {
+    position: fixed;
+    color: rgb(196, 4, 4);
+    font: 18px sans-serif;
+    display: none;
+}
