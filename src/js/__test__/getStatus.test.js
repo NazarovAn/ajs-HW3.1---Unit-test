@@ -10,9 +10,9 @@ describe('getStatus', () => test.each([
   ['critical', { name: 'mage', health: 10 }, {
     name: 'mage', health: 10, status: 'critical', color: 'red',
   }],
-  ['undefined (HP = 0) ', { name: 'mage', health: 0 }, undefined],
-  ['undefined (HP = 101)', { name: 'mage', health: 101 }, undefined],
-  ['undefined (HP = string)', { name: 'mage', health: 'string' }, undefined],
+  ['null (HP = 0) ', { name: 'mage', health: 0 }, null],
+  ['null (HP = 101)', { name: 'mage', health: 101 }, null],
+  ['null (HP = string)', { name: 'mage', health: 'string' }, null],
 ])(
   ('should return %s'),
   (level, amount, expected) => {

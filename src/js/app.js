@@ -12,7 +12,7 @@ export default function writeCharacterStatus() {
     characterNameOutput.textContent = '';
     characterStatusOutput.textContent = '';
     const characterStatus = getStatus(getCharacterData());
-    if (characterStatus === undefined) {
+    if (characterStatus === null) {
       tooltip.style.display = 'block';
       throw new Error('Здоровье персонажа должно быть числом от 1 до 100');
     } else {

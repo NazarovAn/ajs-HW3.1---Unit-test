@@ -2,7 +2,7 @@ export default function getStatus(character) {
   const modifiedCharacter = character;
   const characterHP = parseInt(character.health, 0);
   if (characterHP > 100 || characterHP < 1 || Number.isNaN(characterHP)) {
-    return undefined;
+    return null;
   }
 
   if (characterHP > 50) {
